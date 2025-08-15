@@ -1,4 +1,4 @@
-import { Heart, Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Heart, Github, Linkedin, Mail, Instagram } from "lucide-react";
 
 const footerLinks = {
   navigation: [
@@ -18,7 +18,7 @@ const footerLinks = {
 const socialLinks = [
   { icon: Github, href: "https://github.com/hrushikperumalla", label: "GitHub" },
   { icon: Linkedin, href: "https://linkedin.com/in/hrushikperumalla", label: "LinkedIn" },
-  { icon: Twitter, href: "https://twitter.com/hrushikperumalla", label: "Twitter" },
+  { icon: Instagram, href: "https://instagram.com/hrushik_perumalla", label: "Instagram" },
   { icon: Mail, href: "mailto:hrushikperumalla@gmail.com", label: "Email" },
 ];
 

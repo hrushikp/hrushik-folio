@@ -8,20 +8,28 @@
 
 @layer base {
   :root {
-    /* Elegant Luxury Color System */
-    --aurora-primary: 280 83% 68%;        /* #AF7AFF Luxurious violet */
-    --aurora-secondary: 45 96% 89%;       /* #FFF3CD Warm champagne gold */
-    --aurora-accent: 210 40% 85%;         /* #C4D1E0 Sophisticated pearl */
+    /* Luxe & Elegant Color System */
+    --luxe-silk: 45 15% 92%;              /* #EEE8D5 Silk */
+    --luxe-marble: 0 0% 90%;              /* #E6E6E6 Marble */
+    --luxe-champagne: 35 24% 69%;         /* #D2B68A Champagne */
+    --luxe-pearl: 0 0% 100%;              /* #FFFFFF Pearl */
+    --luxe-velvet: 240 25% 25%;           /* #323052 Velvet */
+    --luxe-onyx: 0 0% 0%;                 /* #000000 Onyx */
     
-    /* Elegant Dark Foundation */
-    --background: 220 39% 5%;             /* #060811 Deep midnight */
-    --surface: 225 25% 8%;                /* #0F1419 Rich charcoal */
-    --surface-elevated: 220 20% 12%;      /* #1A1F29 Elevated luxury */
+    /* Primary System */
+    --aurora-primary: var(--luxe-velvet);
+    --aurora-secondary: var(--luxe-champagne);
+    --aurora-accent: var(--luxe-marble);
+    
+    /* Elegant Foundation */
+    --background: var(--luxe-onyx);
+    --surface: 240 15% 8%;                /* Slightly lighter than onyx */
+    --surface-elevated: 240 20% 12%;      /* Elevated luxury */
     
     /* Refined Text Hierarchy */
-    --text-high: 220 25% 95%;             /* #F1F3F5 Elegant white */
-    --text-medium: 220 15% 75%;           /* #B8C0D0 Sophisticated grey */
-    --text-low: 220 12% 55%;              /* #858B9A Subtle grey */
+    --text-high: var(--luxe-pearl);      /* Pure white for high contrast */
+    --text-medium: var(--luxe-silk);     /* Silk for medium text */
+    --text-low: var(--luxe-marble);      /* Marble for subtle text */
     
     /* Premium Interactive Elements */
     --border: 220 20% 18%;                /* #252A36 Refined borders */
@@ -33,8 +41,8 @@
     --danger: 0 91% 58%;                  /* #EF4444 */
     
     /* Luxury Gradients */
-    --grad-primary: linear-gradient(135deg, hsl(var(--aurora-primary)) 0%, hsl(var(--aurora-secondary)) 100%);
-    --grad-ember: linear-gradient(135deg, hsl(var(--aurora-secondary)) 0%, hsl(var(--aurora-primary)) 100%);
+    --grad-primary: linear-gradient(135deg, hsl(var(--luxe-velvet)) 0%, hsl(var(--luxe-champagne)) 100%);
+    --grad-ember: linear-gradient(135deg, hsl(var(--luxe-champagne)) 0%, hsl(var(--luxe-velvet)) 100%);
     --grad-surface: linear-gradient(135deg, hsl(var(--surface)) 0%, hsl(var(--surface-elevated)) 100%);
     
     /* Glass Effect */

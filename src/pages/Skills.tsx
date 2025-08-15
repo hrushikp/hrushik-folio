@@ -26,14 +26,17 @@ const skillCategories = [
     skills: [
       { name: "Python", level: 95, description: "NumPy, Pandas, Scikit-learn, Matplotlib, Seaborn" },
       { name: "SQL", level: 90, description: "Advanced queries, optimization, database design" },
-      { name: "R", level: 80, description: "Statistical analysis, data visualization" },
       { name: "Java", level: 85, description: "Full-stack development, enterprise applications" },
-      { name: "JavaScript", level: 70, description: "Basic web development, data visualization" },
-      { name: "HTML/CSS", level: 85, description: "Responsive design, modern web standards" }
+      { name: "C Programming", level: 80, description: "System programming, embedded systems" },
+      { name: "Julia", level: 75, description: "High-performance computing, numerical analysis" },
+      { name: "HTML", level: 85, description: "Semantic markup, web standards" },
+      { name: "CSS", level: 85, description: "Responsive design, modern styling" },
+      { name: "XML", level: 70, description: "Data markup, configuration files" },
+      { name: "R", level: 80, description: "Statistical analysis, data visualization" }
     ]
   },
   {
-    title: "Data Science & AI",
+    title: "Data Science & Analytics",
     icon: Brain,
     color: "aurora-secondary",
     skills: [
@@ -42,11 +45,12 @@ const skillCategories = [
       { name: "NLP", level: 88, description: "Text processing, sentiment analysis, LLMs" },
       { name: "Computer Vision", level: 80, description: "Image processing, object detection" },
       { name: "Time Series", level: 85, description: "Forecasting, trend analysis" },
-      { name: "Statistical Analysis", level: 90, description: "Hypothesis testing, regression analysis" }
+      { name: "Statistical Analysis", level: 90, description: "Hypothesis testing, regression analysis" },
+      { name: "DAX", level: 88, description: "Power BI formulas, complex calculations" }
     ]
   },
   {
-    title: "Data Engineering & Cloud",
+    title: "Cloud & Data Engineering",
     icon: Cloud,
     color: "aurora-accent",
     skills: [
@@ -56,6 +60,19 @@ const skillCategories = [
       { name: "Snowflake", level: 88, description: "Data warehousing, analytics" },
       { name: "ETL Pipelines", level: 90, description: "Data cleaning, transformation, automation" },
       { name: "Docker", level: 75, description: "Containerization, deployment" }
+    ]
+  },
+  {
+    title: "DevOps & CI/CD",
+    icon: Zap,
+    color: "status-warning",
+    skills: [
+      { name: "CI/CD Pipelines", level: 85, description: "Automated testing, deployment workflows" },
+      { name: "Git & GitHub", level: 90, description: "Version control, collaboration workflows" },
+      { name: "Jenkins", level: 75, description: "Build automation, continuous integration" },
+      { name: "Docker", level: 75, description: "Containerization, microservices" },
+      { name: "Kubernetes", level: 70, description: "Container orchestration, scaling" },
+      { name: "Infrastructure as Code", level: 75, description: "Terraform, CloudFormation" }
     ]
   },
   {
@@ -69,6 +86,17 @@ const skillCategories = [
       { name: "Matplotlib/Seaborn", level: 90, description: "Custom plots, statistical visualization" },
       { name: "Streamlit", level: 85, description: "Interactive web apps for ML models" },
       { name: "Business Intelligence", level: 90, description: "KPI design, performance metrics" }
+    ]
+  },
+  {
+    title: "Hardware & IoT",
+    icon: Target,
+    color: "status-info",
+    skills: [
+      { name: "Arduino", level: 80, description: "Microcontroller programming, sensor integration" },
+      { name: "Aris", level: 70, description: "Business process modeling, enterprise architecture" },
+      { name: "Raspberry Pi", level: 75, description: "IoT projects, embedded Linux" },
+      { name: "Embedded Systems", level: 75, description: "Low-level programming, hardware interfacing" }
     ]
   }
 ];

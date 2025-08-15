@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, MapPin, Phone, Calendar, Github, Linkedin, Send, Coffee } from "lucide-react";
+import { Mail, MapPin, Phone, Calendar, Github, Linkedin, Instagram, Send, Coffee } from "lucide-react";
 import { useState } from "react";
 
 const contactInfo = [
@@ -21,7 +21,7 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Location",
-    value: "Potsdam, Germany",
+    value: "Potsdam / Berlin, Germany",
     link: null
   }
 ];
@@ -31,13 +31,19 @@ const socialLinks = [
     icon: Github,
     label: "GitHub",
     username: "@hrushikperumalla",
-    link: "#"
+    link: "https://github.com/hrushikperumalla"
   },
   {
     icon: Linkedin,
     label: "LinkedIn", 
     username: "Hrushik Perumalla",
-    link: "#"
+    link: "https://linkedin.com/in/hrushikperumalla"
+  },
+  {
+    icon: Instagram,
+    label: "Instagram",
+    username: "@hrushik_perumalla",
+    link: "https://instagram.com/hrushik_perumalla"
   }
 ];
 
@@ -93,7 +99,7 @@ export default function Contact() {
         <div className="container-custom mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             
-            {/* Contact Form */}
+            {/* Schedule Meeting */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -103,82 +109,40 @@ export default function Contact() {
               <div className="glass-card rounded-2xl p-8">
                 <div className="flex items-center space-x-3 mb-8">
                   <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center">
-                    <Send className="w-6 h-6 text-background" />
+                    <Calendar className="w-6 h-6 text-background" />
                   </div>
                   <div>
                     <h2 className="text-2xl font-sora font-bold text-text-high">
-                      Send me a message
+                      Schedule a Meeting
                     </h2>
                     <p className="text-text-medium">
-                      I typically respond within 24 hours
+                      Let's discuss your project or collaboration opportunities
                     </p>
                   </div>
                 </div>
 
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-sm font-medium text-text-high mb-2">
-                        Your Name
-                      </label>
-                      <Input
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        placeholder="John Doe"
-                        required
-                        className="bg-surface/50 border-border focus:border-aurora-primary"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium text-text-high mb-2">
-                        Email Address
-                      </label>
-                      <Input
-                        name="email"
-                        type="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        placeholder="john@example.com"
-                        required
-                        className="bg-surface/50 border-border focus:border-aurora-primary"
-                      />
-                    </div>
-                  </div>
+                <div className="space-y-6">
+                  <p className="text-text-medium leading-relaxed">
+                    Ready to discuss data science projects, machine learning solutions, or potential collaborations? 
+                    Book a convenient time slot that works for both of us.
+                  </p>
                   
-                  <div>
-                    <label className="block text-sm font-medium text-text-high mb-2">
-                      Subject
-                    </label>
-                    <Input
-                      name="subject"
-                      value={formData.subject}
-                      onChange={handleChange}
-                      placeholder="Project collaboration, consultation, etc."
-                      className="bg-surface/50 border-border focus:border-aurora-primary"
-                    />
-                  </div>
-                  
-                  <div>
-                    <label className="block text-sm font-medium text-text-high mb-2">
-                      Message
-                    </label>
-                    <Textarea
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      placeholder="Tell me about your project, questions, or how we might work together..."
-                      required
-                      rows={6}
-                      className="bg-surface/50 border-border focus:border-aurora-primary resize-none"
-                    />
-                  </div>
-
-                  <Button type="submit" variant="hero" size="lg" className="w-full">
-                    Send Message
-                    <Send className="w-5 h-5" />
+                  <Button 
+                    onClick={() => window.open('#', '_blank')}
+                    variant="hero" 
+                    size="lg" 
+                    className="w-full"
+                  >
+                    Book a Meeting
+                    <Calendar className="w-5 h-5" />
                   </Button>
-                </form>
+                  
+                  <div className="pt-4 border-t border-border">
+                    <p className="text-text-low text-sm text-center">
+                      Available Monday - Friday, 9 AM - 6 PM CET
+                    </p>
+                  </div>
+                </div>
               </div>
             </motion.div>
 
@@ -262,8 +226,8 @@ export default function Contact() {
                       Coffee Chat?
                     </h3>
             <p className="text-text-medium leading-relaxed">
-              Living in Potsdam? I know the best coffee spots in town! Let's grab a cup at 
-              Coffee Fellows or Starbucks near Hauptbahnhof and chat about data, tech, 
+              Living in Potsdam or Berlin? I know the best coffee spots in both cities! Let's grab a cup at 
+              Coffee Fellows in Potsdam or any cozy cafe in Berlin and chat about data, tech, 
               or even my latest cycling routes around Sanssouci. Fair warning: I might 
               accidentally slip into Telugu when I get excited about a project! 
             </p>
