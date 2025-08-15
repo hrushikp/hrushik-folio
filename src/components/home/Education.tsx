@@ -3,12 +3,12 @@ import { GraduationCap, Calendar, MapPin, Award, BookOpen, Users } from "lucide-
 
 const education = [
   {
-    degree: "Master of Science in Data Science",
+    degree: "Master of Science in Data Science, AI, Digital Business",
     institution: "University of Potsdam",
     location: "Potsdam, Germany",
-    period: "2023 - Present (Expected June 2025)",
-    status: "Current",
-    gpa: "Expected: 1.3 (German Scale)",
+    period: "2023 - 2025",
+    status: "Completed",
+    gpa: "2.3 (German Scale)",
     highlights: [
       "Specialization in Machine Learning and Statistical Computing",
       "Advanced coursework in Deep Learning and Neural Networks",
@@ -28,9 +28,9 @@ const education = [
     degree: "Bachelor of Technology in Computer Science & Engineering",
     institution: "KL University (Koneru Lakshmaiah Education Foundation)",
     location: "Guntur, India",
-    period: "2017 - 2021",
+    period: "2015 - 2019",
     status: "Completed",
-    gpa: "8.52/10 CGPA",
+    gpa: "7.7/10 CGPA",
     highlights: [
       "Graduated with Distinction in Computer Science",
       "Published research in IoT Security (IJITEE Journal)",
@@ -49,11 +49,6 @@ const education = [
 ];
 
 const achievements = [
-  {
-    title: "Academic Excellence Award",
-    year: "2020",
-    description: "Recognized for outstanding academic performance in Computer Science"
-  },
   {
     title: "Research Publication",
     year: "2021", 
