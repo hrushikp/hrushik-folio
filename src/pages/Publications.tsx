@@ -41,9 +41,9 @@ const publications = [
     id: 3,
     title: "Emotion Detection in Speech: A Comparative Analysis of CNN-LSTM Hybrid Models Using the EmoDB Dataset",
     journal: "IEEE International Conference on Machine Learning and Applications",
-    volume: "Proceedings 2024",
-    year: "2024",
-    month: "November",
+    volume: "Proceedings 2025",
+    year: "2025",
+    month: "March",
     type: "Conference Paper",
     description: "Comparative analysis of Convolutional Neural Network and Long Short-Term Memory hybrid models for emotion detection in speech using the EmoDB dataset, demonstrating improved accuracy in real-time applications.",
     authors: ["Hrushik Perumalla", "Research Collaborators"],
@@ -52,7 +52,7 @@ const publications = [
       view: "#",
       download: "#",
     },
-    status: "Under Review"
+    status: "Published"
   },
   {
     id: 4,
@@ -77,7 +77,7 @@ const stats = [
   { value: "4", label: "Publications", icon: BookOpen },
   { value: "3", label: "Journals", icon: Award },
   { value: "15+", label: "Citations", icon: Users },
-  { value: "2024", label: "Latest Publication", icon: Calendar },
+  { value: "2025", label: "Latest Publication", icon: Calendar },
 ];
 
 const researchAreas = [
