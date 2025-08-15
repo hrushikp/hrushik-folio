@@ -81,6 +81,21 @@ const tools = [
 
 const certifications = [
   {
+    title: "Innovation & Leadership course",
+    issuer: "EELISA - European University",
+    date: "2022",
+    type: "Leadership",
+    verified: true
+  },
+  {
+    title: "Snowflake Training (3 Certifications)",
+    issuer: "Snowflake Inc.",
+    date: "Sep 2022",
+    type: "Data Platform",
+    verified: true,
+    description: "Hands on essentials in Data Applications, Data sharing, Data warehousing"
+  },
+  {
     title: "AWS Machine Learning Practitioner",
     issuer: "Amazon Web Services",
     date: "Dec 2020",
@@ -88,17 +103,17 @@ const certifications = [
     verified: true
   },
   {
-    title: "Snowflake Certified (3 Certifications)",
-    issuer: "Snowflake Inc.",
-    date: "Sep 2022",
-    type: "Data Platform",
+    title: "Artificial Intelligence Certification",
+    issuer: "Cognizant Academy",
+    date: "Aug 2020",
+    type: "AI Certification",
     verified: true
   },
   {
-    title: "Microsoft Power BI Data Analyst",
-    issuer: "Microsoft",
-    date: "Jan 2023",
-    type: "Analytics Certification",
+    title: "Certified Jr. Developer/App Analyst AD & AVM",
+    issuer: "Cognizant Academy",
+    date: "Jan 2020",
+    type: "Development",
     verified: true
   },
   {
@@ -109,11 +124,47 @@ const certifications = [
     verified: true
   },
   {
-    title: "Artificial Intelligence Certification",
-    issuer: "Cognizant Academy",
-    date: "Aug 2020",
-    type: "AI Certification",
+    title: "Natural Language Processing Certification",
+    issuer: "KL University",
+    date: "May 2018",
+    type: "NLP",
     verified: true
+  },
+  {
+    title: "Data Science Research Methods Using Python",
+    issuer: "CloudSwyft Global Systems",
+    date: "2020",
+    type: "Research",
+    verified: true
+  },
+  {
+    title: "Introduction to Data Analytics with Python",
+    issuer: "FutureLearn",
+    date: "2020",
+    type: "Analytics",
+    verified: true
+  },
+  {
+    title: "Introduction to Data Science for Business",
+    issuer: "FutureLearn",
+    date: "2020",
+    type: "Business Analytics",
+    verified: true
+  }
+];
+
+const workshops = [
+  {
+    title: "Seminar on 'Big Data & Machine Learning'",
+    organizer: "Ecovation Solutions Pvt.Ltd at KL University",
+    date: "Feb 2018",
+    type: "Seminar"
+  },
+  {
+    title: "Workshop on 'AI, Big Data & Machine Learning'",
+    organizer: "KL University",
+    date: "Feb 2018",
+    type: "Workshop"
   }
 ];
 
@@ -124,9 +175,12 @@ const languages = [
 ];
 
 const softSkills = [
-  "Analytical Thinking", "Problem Solving", "Team Leadership", 
-  "Stakeholder Communication", "Project Management", "Agile Methodology",
-  "Research & Development", "Technical Documentation", "Presentation Skills"
+  "Analytical Thinking", "Problem Solving", "Data-Driven Decision Making",
+  "Stakeholder Communication", "Business Strategy Translation", "Cross-Functional Collaboration",
+  "Agile Methodology", "Project Management", "Technical Leadership",
+  "Research & Development", "Statistical Reasoning", "Presentation Skills",
+  "Risk Assessment", "Business Continuity Planning", "Client Relationship Management",
+  "Technical Documentation", "Training & Mentoring", "Innovation Management"
 ];
 
 export default function Skills() {
@@ -298,7 +352,7 @@ export default function Skills() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {certifications.map((cert, index) => (
               <motion.div
                 key={cert.title}
@@ -325,6 +379,12 @@ export default function Skills() {
                   {cert.issuer}
                 </p>
                 
+                {cert.description && (
+                  <p className="text-text-medium text-sm mb-3">
+                    {cert.description}
+                  </p>
+                )}
+                
                 <div className="flex items-center justify-between text-sm">
                   <span className="text-text-medium">{cert.date}</span>
                   <span className="px-2 py-1 bg-aurora-accent/10 text-aurora-accent rounded-md border border-aurora-accent/20">
@@ -334,6 +394,49 @@ export default function Skills() {
               </motion.div>
             ))}
           </div>
+
+          {/* Workshops & Seminars */}
+          <motion.div
+            className="mt-16"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <h3 className="text-2xl font-sora font-bold text-text-high mb-8 text-center">
+              Workshops & Seminars
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {workshops.map((workshop, index) => (
+                <motion.div
+                  key={workshop.title}
+                  className="glass-card rounded-xl p-6 hover:shadow-glow transition-all duration-300"
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.1, duration: 0.5 }}
+                  viewport={{ once: true }}
+                >
+                  <div className="flex items-start space-x-3 mb-4">
+                    <Book className="w-6 h-6 text-aurora-secondary mt-1" />
+                    <div>
+                      <h4 className="font-sora font-semibold text-text-high mb-2 leading-tight">
+                        {workshop.title}
+                      </h4>
+                      <p className="text-aurora-primary font-medium mb-2">
+                        {workshop.organizer}
+                      </p>
+                      <div className="flex items-center justify-between text-sm">
+                        <span className="text-text-medium">{workshop.date}</span>
+                        <span className="px-2 py-1 bg-aurora-secondary/10 text-aurora-secondary rounded-md border border-aurora-secondary/20">
+                          {workshop.type}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
         </div>
       </section>
 
