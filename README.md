@@ -1,54 +1,79 @@
-# Welcome to your Lovable project
+# Hrushik Perumalla - Portfolio Website
 
-## Project info
+A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS showcasing my experience as a Data Scientist and Business Systems Analyst.
 
-**URL**: https://lovable.dev/projects/d59a285d-56ed-41a8-9dff-30175354372a
+## 🚀 Features
 
-## How can I edit this code?
+- **Modern Design**: Clean, professional interface with smooth animations
+- **Responsive**: Optimized for all devices and screen sizes
+- **Performance**: Fast loading with optimized assets and code splitting
+- **SEO Optimized**: Proper meta tags and semantic HTML structure
+- **Accessibility**: WCAG compliant with proper ARIA labels
 
-There are several ways of editing your application.
+## 🛠️ Tech Stack
 
-**Use Lovable**
+- **Frontend**: React 18, TypeScript
+- **Styling**: Tailwind CSS, Custom Design System
+- **Build Tool**: Vite
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Routing**: React Router DOM
+- **Deployment**: GitHub Pages
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/d59a285d-56ed-41a8-9dff-30175354372a) and start prompting.
+## 🏃‍♂️ Running Locally
 
-Changes made via Lovable will be committed automatically to this repo.
+1. **Clone the repository**
+   ```bash
+   git clone <YOUR_GIT_URL>
+   cd <YOUR_PROJECT_NAME>
+   ```
 
-**Use your preferred IDE**
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+4. **Open your browser**
+   Navigate to `http://localhost:8080`
 
-Follow these steps:
+## 🚀 GitHub Pages Deployment
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+This project is configured for automatic deployment to GitHub Pages:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+1. **Enable GitHub Pages**
+   - Go to your repository settings
+   - Navigate to Pages section
+   - Set source to "GitHub Actions"
 
-# Step 3: Install the necessary dependencies.
-npm i
+2. **Push to main branch**
+   ```bash
+   git add .
+   git commit -m "Deploy to GitHub Pages"
+   git push origin main
+   ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+3. **Access your site**
+   Your site will be available at `https://yourusername.github.io/repository-name`
 
-**Edit a file directly in GitHub**
+## 📝 Customization
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Content Updates
 
-**Use GitHub Codespaces**
+- **Personal Information**: Update contact details and social links
+- **Experience**: Modify `src/pages/Experience.tsx`
+- **Projects**: Edit `src/pages/Projects.tsx`  
+- **Skills**: Update `src/pages/Skills.tsx`
+- **Publications**: Modify `src/pages/Publications.tsx`
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Styling
+
+- **Design System**: Customize colors and themes in `src/index.css`
+- **Tailwind Config**: Modify `tailwind.config.ts` for custom utilities
 
 ## What technologies are used for this project?
 
@@ -59,15 +84,11 @@ This project is built with:
 - React
 - shadcn-ui
 - Tailwind CSS
+- Framer Motion
+- React Router DOM
 
-## How can I deploy this project?
+## Lovable Integration
 
-Simply open [Lovable](https://lovable.dev/projects/d59a285d-56ed-41a8-9dff-30175354372a) and click on Share -> Publish.
+**URL**: https://lovable.dev/projects/d59a285d-56ed-41a8-9dff-30175354372a
 
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+You can also deploy directly through [Lovable](https://lovable.dev/projects/d59a285d-56ed-41a8-9dff-30175354372a) by clicking Share -> Publish.
