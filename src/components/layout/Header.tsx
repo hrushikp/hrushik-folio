@@ -16,7 +16,7 @@ const navigation = [
 const socialLinks = [
   { icon: Github, href: "https://github.com/hrushikperumalla", label: "GitHub" },
   { icon: Linkedin, href: "https://linkedin.com/in/hrushikperumalla", label: "LinkedIn" },
-  { icon: Mail, href: "mailto:hrushik@example.com", label: "Email" },
+  { icon: Mail, href: "mailto:hrushikperumalla@gmail.com", label: "Email" },
 ];
 
 export default function Header() {

@@ -5,17 +5,17 @@ import { ChevronDown, ArrowRight, Download } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
 
 const roles = [
-  "Data Analyst",
-  "Business Systems Analyst", 
-  "Quality Analytics Specialist",
-  "Process Automation Expert"
+  "Data Scientist",
+  "Data Analyst", 
+  "ML Engineer",
+  "Business Intelligence Specialist"
 ];
 
 const stats = [
   { value: "5+", label: "Years Experience" },
-  { value: "50+", label: "Projects Delivered" },
-  { value: "15", label: "Publications" },
-  { value: "42%", label: "Avg. Efficiency Gain" },
+  { value: "25+", label: "Projects Delivered" },
+  { value: "4", label: "Publications" },
+  { value: "15+", label: "Certifications" },
 ];
 
 export default function HeroSection() {
@@ -116,9 +116,10 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.6 }}
           >
-            Transforming healthcare and energy sectors through data-driven insights, 
-            process automation, and innovative analytics solutions that drive 
-            measurable business impact.
+            Transforming data into actionable insights through advanced analytics, 
+            machine learning, and AI solutions. Experienced in building scalable 
+            data pipelines, predictive models, and business intelligence solutions 
+            across multiple industries.
           </motion.p>
 
           {/* CTA Buttons */}

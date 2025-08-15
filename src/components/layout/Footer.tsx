@@ -19,7 +19,7 @@ const socialLinks = [
   { icon: Github, href: "https://github.com/hrushikperumalla", label: "GitHub" },
   { icon: Linkedin, href: "https://linkedin.com/in/hrushikperumalla", label: "LinkedIn" },
   { icon: Twitter, href: "https://twitter.com/hrushikperumalla", label: "Twitter" },
-  { icon: Mail, href: "mailto:hrushik@example.com", label: "Email" },
+  { icon: Mail, href: "mailto:hrushikperumalla@gmail.com", label: "Email" },
 ];
 
 export default function Footer() {
@@ -40,9 +40,9 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-text-medium mb-6 max-w-md">
-              Data Analyst & Business Systems Analyst specializing in 
-              healthcare quality analytics, process automation, and 
-              data visualization.
+              Data Scientist & Analyst specializing in machine learning, 
+              cloud computing, and business intelligence solutions across 
+              technology, education, and business sectors.
             </p>
             <div className="flex items-center space-x-4">
               {socialLinks.map((social) => (

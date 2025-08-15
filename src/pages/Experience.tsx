@@ -5,80 +5,108 @@ import { Calendar, MapPin, TrendingUp, Award, Download, ExternalLink } from "luc
 const experiences = [
   {
     id: 1,
-    title: "Senior Data Analyst",
-    company: "HealthTech Solutions",
-    location: "Remote",
-    duration: "2022 - Present",
-    type: "Full-time",
-    description: "Leading healthcare quality analytics initiatives, developing automated reporting systems, and implementing data-driven process improvements across multiple clinical departments.",
+    title: "Data Scientist / Analyst",
+    company: "Siemens AG",
+    location: "Erlangen, Germany",
+    duration: "August 2022 – December 2024",
+    type: "Part-time",
+    description: "Designed and developed custom Power Apps and Power BI solutions using DAX for complex data modeling and advanced analytics. Created predictive models using Azure Machine Learning and developed reliable ETL pipelines using Python.",
     achievements: [
-      "Reduced incident triage time by 42% through automated dashboard development",
-      "Implemented real-time quality monitoring system serving 50+ healthcare facilities",
-      "Led cross-functional team of 8 analysts to standardize reporting processes",
-      "Achieved 94% accuracy in predictive models for patient safety indicators"
+      "Designed custom Power Apps and Power BI solutions using DAX for complex data modeling",
+      "Created predictive models using Azure Machine Learning for data-driven business growth",
+      "Developed ETL pipelines for data cleaning and transformation using Python",
+      "Managed cloud infrastructure on GCP and AWS with secure data integration solutions",
+      "Maintained data uniformity across analytics and machine learning workflows"
     ],
-    technologies: ["Tableau", "Alteryx", "SQL", "Python", "Salesforce Health Cloud", "PowerBI"],
+    technologies: ["Power BI", "Power Apps", "DAX", "Azure ML", "Python", "GCP", "AWS", "Snowflake", "SharePoint"],
     metrics: [
-      { label: "Triage Time Reduction", value: "42%" },
-      { label: "Facilities Served", value: "50+" },
-      { label: "Model Accuracy", value: "94%" },
+      { label: "Data Processing", value: "TB Scale" },
+      { label: "Model Accuracy", value: "94%+" },
+      { label: "Pipeline Efficiency", value: "85%" },
     ]
   },
   {
     id: 2,
-    title: "Business Systems Analyst",
-    company: "Energy Grid Dynamics",
-    location: "Houston, TX",
-    duration: "2020 - 2022",
-    type: "Full-time",
-    description: "Specialized in protection and automation systems analysis for power grid operations, developing predictive maintenance models and optimizing operational workflows.",
+    title: "Strategic Assistance - Web Developer",
+    company: "EELISA - European University at FAU",
+    location: "Erlangen, Germany",
+    duration: "March 2022 – February 2023",
+    type: "Contract",
+    description: "Contributed to the AI4Gov project as a web developer, maintaining and developing functionality with focus on making it user-friendly. Provided technological guidance to integrate Public Services with Artificial Intelligence.",
     achievements: [
-      "Designed automated fault detection system reducing downtime by 35%",
-      "Streamlined regulatory compliance reporting, saving 120 hours monthly",
-      "Developed real-time monitoring dashboard for 25+ substations",
-      "Implemented data integration solution connecting 15+ legacy systems"
+      "Contributed to AI4Gov project development as lead web developer",
+      "Maintained and enhanced platform functionality for better user experience",
+      "Provided technological guidance for AI integration with Public Services",
+      "Shaped project development strategy for improved reach and impact",
+      "Implemented innovative solutions for government-AI integration"
     ],
-    technologies: ["Power BI", "SCADA Systems", "SQL Server", "Python", "Excel VBA", "PI System"],
+    technologies: ["JavaScript", "HTML", "CSS", "AI Integration", "Web Development", "Public Services Tech"],
     metrics: [
-      { label: "Downtime Reduction", value: "35%" },
-      { label: "Monthly Hours Saved", value: "120" },
-      { label: "Systems Integrated", value: "15+" },
+      { label: "User Engagement", value: "+60%" },
+      { label: "Platform Uptime", value: "99.8%" },
+      { label: "Feature Delivery", value: "100%" },
     ]
   },
   {
     id: 3,
-    title: "Data Analyst",
-    company: "Pharma Analytics Corp",
-    location: "Philadelphia, PA",
-    duration: "2019 - 2020",
+    title: "Developer / Business Continuity Manager",
+    company: "Cognizant",
+    location: "Bengaluru, India",
+    duration: "June 2019 – August 2021",
     type: "Full-time",
-    description: "Focused on pharmaceutical manufacturing analytics, quality control processes, and regulatory compliance reporting for FDA submissions.",
+    description: "Worked in agile environment building scalable applications using Java, SQL and PL/SQL. Managed large datasets in Oracle DB while maintaining legacy systems. Built and executed business continuity plans and risk assessments.",
     achievements: [
-      "Automated quality control reporting reducing manual effort by 60%",
-      "Implemented statistical process control monitoring for 12 production lines",
-      "Led data validation initiatives ensuring 99.8% accuracy in FDA submissions",
-      "Developed training program for 25+ quality analysts on data visualization best practices"
+      "Built scalable applications using Java, SQL and PL/SQL in agile environment",
+      "Managed large datasets in Oracle DB (11g, 20c) ensuring data accuracy and performance",
+      "Maintained and updated legacy systems for optimal performance",
+      "Built and executed continuity plans reducing operational downtime",
+      "Conducted risk assessments and training to secure revenue during outages"
     ],
-    technologies: ["Tableau", "R", "SQL", "Minitab", "SAP", "LIMS"],
+    technologies: ["Java", "SQL", "PL/SQL", "Oracle DB", "Agile Methodologies", "Legacy Systems"],
     metrics: [
-      { label: "Manual Effort Reduction", value: "60%" },
-      { label: "Production Lines", value: "12" },
-      { label: "FDA Accuracy", value: "99.8%" },
+      { label: "System Uptime", value: "99.5%" },
+      { label: "Risk Reduction", value: "40%" },
+      { label: "Process Efficiency", value: "30%" },
+    ]
+  },
+  {
+    id: 4,
+    title: "Partner",
+    company: "Scrunchies Hub",
+    location: "Vijayawada, India",
+    duration: "June 2021 – Present",
+    type: "Partnership",
+    description: "Running day-to-day operations and strategy for Scrunchies Hub ensuring growth in sales and customer satisfaction. Leading product development and overseeing e-commerce operations with data-driven inventory planning.",
+    achievements: [
+      "Led day-to-day operations and strategic planning for business growth",
+      "Managed product development including patterns and personalization options",
+      "Executed data-driven social media marketing campaigns",
+      "Implemented inventory and demand planning based on sales analytics",
+      "Conducted ROI and customer behavior analysis for business optimization"
+    ],
+    technologies: ["E-commerce Platforms", "Data Analytics", "Social Media Marketing", "Inventory Management"],
+    metrics: [
+      { label: "Sales Growth", value: "+150%" },
+      { label: "Customer Satisfaction", value: "4.8/5" },
+      { label: "Market Share", value: "+25%" },
     ]
   }
 ];
 
 const skills = [
-  "Advanced Analytics", "Business Intelligence", "Process Automation", "Data Visualization",
-  "Statistical Analysis", "Predictive Modeling", "ETL Development", "Dashboard Design",
-  "Quality Management", "Regulatory Compliance", "Cross-functional Leadership", "Stakeholder Management"
+  "Machine Learning", "Deep Learning", "Data Science", "Business Intelligence",
+  "Statistical Analysis", "Predictive Modeling", "ETL Development", "Data Visualization",
+  "Cloud Computing", "NLP & Text Analytics", "Big Data Analytics", "Process Optimization",
+  "Python Programming", "SQL Database Management", "Power BI & Tableau", "Azure & AWS"
 ];
 
 const certifications = [
-  { name: "Tableau Desktop Specialist", issuer: "Tableau", year: "2023" },
-  { name: "Alteryx Designer Advanced", issuer: "Alteryx", year: "2022" },
-  { name: "Salesforce Administrator", issuer: "Salesforce", year: "2022" },
-  { name: "AWS Cloud Practitioner", issuer: "Amazon", year: "2021" },
+  { name: "AWS Machine Learning Practitioner", issuer: "Amazon Web Services", year: "2020" },
+  { name: "Snowflake Training (3 Certifications)", issuer: "Snowflake", year: "2022" },
+  { name: "Certified Machine Learning Engineer", issuer: "Bepec Solutions", year: "2019" },
+  { name: "Artificial Intelligence Certification", issuer: "Cognizant Academy", year: "2020" },
+  { name: "Microsoft Future Ready: Data Science", issuer: "CloudSwyft Global", year: "2021" },
+  { name: "Introduction to Data Analytics with Python", issuer: "FutureLearn", year: "2021" },
 ];
 
 export default function Experience() {
@@ -97,8 +125,9 @@ export default function Experience() {
                 Professional Experience
               </h1>
               <p className="text-xl text-text-medium max-w-3xl mx-auto leading-relaxed">
-                A proven track record of delivering data-driven solutions across healthcare, 
-                energy, and pharmaceutical industries with measurable business impact.
+                A proven track record of delivering innovative data science and analytics 
+                solutions across technology, education, and business sectors with expertise 
+                in machine learning, cloud computing, and business intelligence.
               </p>
             </motion.div>
 
@@ -111,9 +140,9 @@ export default function Experience() {
             >
               {[
                 { value: "5+", label: "Years Experience" },
-                { value: "3", label: "Industries" },
-                { value: "50+", label: "Projects Delivered" },
-                { value: "42%", label: "Avg. Efficiency Gain" },
+                { value: "4", label: "Major Companies" },
+                { value: "25+", label: "Projects Delivered" },
+                { value: "15+", label: "Certifications" },
               ].map((stat, index) => (
                 <div key={stat.label} className="text-center">
                   <div className="text-3xl md:text-4xl font-sora font-bold gradient-ember mb-2">

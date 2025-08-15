@@ -4,34 +4,34 @@ import { ArrowRight, TrendingUp } from "lucide-react";
 
 const skillCategories = [
   {
-    name: "Analytics & BI",
-    skills: ["Tableau", "Power BI", "Alteryx", "SQL", "Python"],
+    name: "Data Science & ML",
+    skills: ["Python", "Machine Learning", "Deep Learning", "Statistical Analysis", "Predictive Modeling"],
     proficiency: 95,
     color: "aurora-primary",
   },
   {
-    name: "Data Engineering",
-    skills: ["ETL/ELT", "Data Warehousing", "APIs", "Cloud Platforms"],
+    name: "Data Engineering & Cloud",
+    skills: ["ETL/ELT", "Azure", "AWS", "GCP", "Snowflake", "Oracle DB"],
     proficiency: 88,
     color: "aurora-secondary",
   },
   {
-    name: "Business Systems",
-    skills: ["Salesforce", "Process Automation", "Workflow Design"],
+    name: "Business Intelligence",
+    skills: ["Power BI", "Tableau", "DAX", "SQL", "Data Visualization"],
     proficiency: 92,
     color: "aurora-accent",
   },
   {
-    name: "Domain Knowledge",
-    skills: ["Healthcare QA", "Energy Systems", "Pharma Compliance"],
+    name: "AI & Advanced Analytics",
+    skills: ["NLP", "Computer Vision", "LLMs", "Time Series", "Azure ML"],
     proficiency: 90,
     color: "status-success",
   },
 ];
 
 const achievements = [
-  { label: "Certifications", value: "12+" },
-  { label: "Technologies", value: "25+" },
+  { label: "Programming Languages", value: "8+" },
+  { label: "Cloud Platforms", value: "3" },
   { label: "Years Experience", value: "5+" },
 ];
 
@@ -51,8 +51,9 @@ export default function SkillsPreview() {
             Technical Expertise
           </h2>
           <p className="text-xl text-text-medium max-w-2xl mx-auto">
-            A comprehensive skill set spanning analytics, engineering, and domain expertise 
-            with proven track record across multiple industries.
+            A comprehensive skill set spanning data science, machine learning, and cloud 
+            computing with proven expertise in delivering scalable analytics solutions 
+            and AI-powered applications across multiple domains.
           </p>
         </motion.div>
 
@@ -146,23 +147,32 @@ export default function SkillsPreview() {
             {/* Main Content */}
             <div>
               <h3 className="text-2xl font-sora font-bold text-text-high mb-4">
-                Building solutions that{" "}
-                <span className="gradient-ember">drive results</span>
+                Turning data into{" "}
+                <span className="gradient-ember">intelligent solutions</span>
               </h3>
               <p className="text-text-medium leading-relaxed mb-6">
-                My expertise spans the full analytics lifecycle—from data engineering 
-                and visualization to business process optimization. I combine deep 
-                technical skills with domain knowledge to deliver solutions that 
-                create measurable business impact.
+                My expertise spans the complete data science lifecycle—from data engineering 
+                and machine learning to cloud deployment and business intelligence. I combine 
+                deep technical skills with business acumen to deliver AI-powered solutions 
+                that create measurable impact across industries.
               </p>
               
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-gradient-primary rounded-full mt-2" />
                   <div>
-                    <strong className="text-text-high">Advanced Analytics:</strong>{" "}
+                    <strong className="text-text-high">Machine Learning & AI:</strong>{" "}
                     <span className="text-text-medium">
-                      Machine learning, statistical modeling, and predictive analytics
+                      Predictive modeling, deep learning, NLP, and computer vision solutions
+                    </span>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-gradient-primary rounded-full mt-2" />
+                  <div>
+                    <strong className="text-text-high">Cloud & Data Engineering:</strong>{" "}
+                    <span className="text-text-medium">
+                      ETL pipelines, Azure/AWS/GCP, Snowflake, and scalable data architectures
                     </span>
                   </div>
                 </div>
@@ -171,16 +181,7 @@ export default function SkillsPreview() {
                   <div>
                     <strong className="text-text-high">Business Intelligence:</strong>{" "}
                     <span className="text-text-medium">
-                      Dashboard development, KPI tracking, and executive reporting
-                    </span>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-gradient-primary rounded-full mt-2" />
-                  <div>
-                    <strong className="text-text-high">Process Automation:</strong>{" "}
-                    <span className="text-text-medium">
-                      Workflow optimization, RPA implementation, and system integration
+                      Power BI, Tableau, advanced analytics, and data-driven decision making
                     </span>
                   </div>
                 </div>
