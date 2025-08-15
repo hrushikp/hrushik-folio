@@ -104,11 +104,11 @@ export default function Footer() {
           <p className="text-text-medium text-sm mb-4 md:mb-0">
             © {currentYear} Hrushik Perumalla. All rights reserved.
           </p>
-          <div className="flex items-center space-x-1 text-text-medium text-sm">
-            <span>Built with</span>
-            <Heart className="w-4 h-4 text-status-danger" />
-            <span>using React, TypeScript & Tailwind CSS</span>
-          </div>
+          <p className="text-text-medium text-sm text-center md:text-right">
+            The information and content provided on this page are for informational purposes only. 
+            Unauthorized duplication, distribution, or use of this material without prior consent is strictly prohibited. 
+            Thank you for your understanding and cooperation.
+          </p>
         </div>
       </div>
     </footer>
