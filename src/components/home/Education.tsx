@@ -4,9 +4,9 @@ import { GraduationCap, Calendar, MapPin, Award, BookOpen, Users } from "lucide-
 const education = [
   {
     degree: "Master of Science in Data Science, AI, Digital Business",
-    institution: "University of Potsdam",
+    institution: "Gisma University of Applied Science",
     location: "Potsdam, Germany",
-    period: "2023 - 2025",
+    period: "2023 - July 25, 2025",
     status: "Completed",
     gpa: "2.3 (German Scale)",
     highlights: [

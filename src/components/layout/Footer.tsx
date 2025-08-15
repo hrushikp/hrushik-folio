@@ -1,4 +1,5 @@
 import { Heart, Github, Linkedin, Mail, Instagram } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const footerLinks = {
   navigation: [
@@ -66,14 +67,14 @@ export default function Footer() {
               Navigation
             </h3>
             <ul className="space-y-2">
-              {footerLinks.navigation.map((link) => (
+               {footerLinks.navigation.map((link) => (
                 <li key={link.name}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.href}
                     className="text-text-medium hover:text-aurora-primary transition-colors duration-200"
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -85,14 +86,14 @@ export default function Footer() {
               Resources
             </h3>
             <ul className="space-y-2">
-              {footerLinks.resources.map((link) => (
+               {footerLinks.resources.map((link) => (
                 <li key={link.name}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.href}
                     className="text-text-medium hover:text-aurora-primary transition-colors duration-200"
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
