@@ -41,24 +41,35 @@ A modern, responsive portfolio website built with React, TypeScript, and Tailwin
 4. **Open your browser**
    Navigate to `http://localhost:8080`
 
-## 🚀 GitHub Pages Deployment
+## 🚀 GitHub Pages Deployment (Main Branch)
 
-This project is configured for automatic deployment to GitHub Pages:
+This project is configured for GitHub Pages deployment from the main branch:
 
-1. **Enable GitHub Pages**
-   - Go to your repository settings
-   - Navigate to Pages section
-   - Set source to "GitHub Actions"
-
-2. **Push to main branch**
+1. **Build the project**
    ```bash
-   git add .
-   git commit -m "Deploy to GitHub Pages"
+   npm run build
+   ```
+
+2. **Commit the docs folder**
+   ```bash
+   git add docs/
+   git commit -m "Build for GitHub Pages"
    git push origin main
    ```
 
-3. **Access your site**
-   Your site will be available at `https://yourusername.github.io/repository-name`
+3. **Configure GitHub Pages**
+   - Go to your repository settings
+   - Navigate to Pages section  
+   - Set source to "Deploy from a branch"
+   - Select "main" branch and "/docs" folder
+   - Save the settings
+
+4. **Update the base URL**
+   - Replace `your-repo-name` in `vite.config.ts` with your actual repository name
+   - Example: If your repo is `https://github.com/username/portfolio`, set base to `/portfolio/`
+
+5. **Access your site**
+   Your site will be available at `https://yourusername.github.io/your-repo-name`
 
 ## 📝 Customization
 
