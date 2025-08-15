@@ -443,80 +443,79 @@ export default function Skills() {
       {/* Languages & Soft Skills */}
       <section className="py-20 bg-surface/30">
         <div className="container-custom mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-            
-            {/* Languages */}
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-            >
-              <div className="flex items-center space-x-4 mb-8">
-                <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center">
-                  <Languages className="w-6 h-6 text-background" />
-                </div>
-                <h2 className="text-3xl font-sora font-bold text-text-high">
-                  Languages
-                </h2>
+          
+          {/* Languages */}
+          <motion.div
+            className="mb-16"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <div className="flex items-center space-x-4 mb-8 justify-center">
+              <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center">
+                <Languages className="w-6 h-6 text-background" />
               </div>
+              <h2 className="text-3xl font-sora font-bold text-text-high">
+                Languages
+              </h2>
+            </div>
 
-              <div className="space-y-6">
-                {languages.map((lang, index) => (
-                  <motion.div
-                    key={lang.name}
-                    className="glass-card rounded-xl p-6"
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ delay: index * 0.1, duration: 0.4 }}
-                    viewport={{ once: true }}
-                  >
-                    <div className="flex justify-between items-center mb-3">
-                      <h3 className="font-sora font-semibold text-text-high">
-                        {lang.name}
-                      </h3>
-                      <span className="text-aurora-primary font-medium">
-                        {lang.level}
-                      </span>
-                    </div>
-                    <Progress value={lang.progress} className="h-2" />
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+              {languages.map((lang, index) => (
+                <motion.div
+                  key={lang.name}
+                  className="glass-card rounded-xl p-6"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.1, duration: 0.4 }}
+                  viewport={{ once: true }}
+                >
+                  <div className="flex justify-between items-center mb-3">
+                    <h3 className="font-sora font-semibold text-text-high">
+                      {lang.name}
+                    </h3>
+                    <span className="text-aurora-primary font-medium">
+                      {lang.level}
+                    </span>
+                  </div>
+                  <Progress value={lang.progress} className="h-2" />
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
 
-            {/* Soft Skills */}
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-            >
-              <div className="flex items-center space-x-4 mb-8">
-                <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center">
-                  <Users className="w-6 h-6 text-background" />
-                </div>
-                <h2 className="text-3xl font-sora font-bold text-text-high">
-                  Soft Skills
-                </h2>
+          {/* Soft Skills */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <div className="flex items-center space-x-4 mb-8 justify-center">
+              <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center">
+                <Users className="w-6 h-6 text-background" />
               </div>
+              <h2 className="text-3xl font-sora font-bold text-text-high">
+                Soft Skills
+              </h2>
+            </div>
 
-              <div className="grid grid-cols-1 gap-3">
-                {softSkills.map((skill, index) => (
-                  <motion.div
-                    key={skill}
-                    className="glass-card rounded-lg p-4 hover:border-aurora-primary/40 transition-all duration-300"
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    transition={{ delay: index * 0.05, duration: 0.3 }}
-                    viewport={{ once: true }}
-                  >
-                    <span className="text-text-high font-medium">{skill}</span>
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
-          </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 max-w-6xl mx-auto">
+              {softSkills.map((skill, index) => (
+                <motion.div
+                  key={skill}
+                  className="glass-card rounded-lg p-4 hover:border-aurora-primary/40 transition-all duration-300"
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ delay: index * 0.05, duration: 0.3 }}
+                  viewport={{ once: true }}
+                >
+                  <span className="text-text-high font-medium">{skill}</span>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
         </div>
       </section>
 

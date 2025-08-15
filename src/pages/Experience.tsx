@@ -252,73 +252,34 @@ export default function Experience() {
           </div>
         </section>
 
-        {/* Skills & Certifications */}
+        {/* Core Skills */}
         <section className="py-20 bg-surface/30">
           <div className="container-custom mx-auto px-6">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-              {/* Core Skills */}
-              <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: true }}
-              >
-                <h2 className="text-3xl font-sora font-bold text-text-high mb-8">
-                  Core Skills
-                </h2>
-                <div className="grid grid-cols-2 gap-4">
-                  {skills.map((skill, index) => (
-                    <motion.div
-                      key={skill}
-                      className="flex items-center space-x-3 p-4 glass-card rounded-xl"
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ delay: index * 0.05, duration: 0.5 }}
-                      viewport={{ once: true }}
-                    >
-                      <TrendingUp className="w-5 h-5 text-aurora-primary" />
-                      <span className="text-text-medium font-medium">{skill}</span>
-                    </motion.div>
-                  ))}
-                </div>
-              </motion.div>
-
-              {/* Certifications */}
-              <motion.div
-                initial={{ opacity: 0, x: 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: true }}
-              >
-                <h2 className="text-3xl font-sora font-bold text-text-high mb-8">
-                  Certifications
-                </h2>
-                <div className="space-y-4">
-                  {certifications.map((cert, index) => (
-                    <motion.div
-                      key={cert.name}
-                      className="glass-card rounded-xl p-6 flex items-center justify-between"
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ delay: index * 0.1, duration: 0.5 }}
-                      viewport={{ once: true }}
-                    >
-                      <div>
-                        <h3 className="font-sora font-semibold text-text-high mb-1">
-                          {cert.name}
-                        </h3>
-                        <p className="text-text-medium text-sm">
-                          {cert.issuer} • {cert.year}
-                        </p>
-                      </div>
-                      <Button variant="ghost" size="icon">
-                        <ExternalLink className="w-4 h-4" />
-                      </Button>
-                    </motion.div>
-                  ))}
-                </div>
-              </motion.div>
-            </div>
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="text-3xl font-sora font-bold text-text-high mb-8 text-center">
+                Core Skills & Technologies
+              </h2>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                {skills.map((skill, index) => (
+                  <motion.div
+                    key={skill}
+                    className="flex items-center space-x-3 p-4 glass-card rounded-xl"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: index * 0.05, duration: 0.5 }}
+                    viewport={{ once: true }}
+                  >
+                    <TrendingUp className="w-5 h-5 text-aurora-primary" />
+                    <span className="text-text-medium font-medium">{skill}</span>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
           </div>
         </section>
 
