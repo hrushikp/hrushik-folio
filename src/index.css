@@ -8,23 +8,23 @@
 
 @layer base {
   :root {
-    /* Classy Dark Theme Color System */
-    --classy-gold: 45 85% 75%;             /* #F4D03F Sophisticated gold */
-    --classy-cream: 40 25% 88%;            /* #E8E2D5 Warm cream */
-    --classy-navy: 220 30% 15%;            /* #1E2A3A Deep navy */
-    --classy-charcoal: 210 15% 12%;        /* #1A1D23 Rich charcoal */
-    --classy-pearl: 0 0% 92%;              /* #EBEBEB Elegant pearl */
-    --classy-slate: 215 20% 25%;           /* #334155 Sophisticated slate */
+    /* Classy Blue & White Theme */
+    --elegant-blue: 220 85% 65%;          /* #4A90E2 Sophisticated blue */
+    --royal-blue: 230 70% 55%;            /* #3366CC Deep royal blue */
+    --ice-white: 210 20% 95%;             /* #F0F2F5 Pure ice white */
+    --pearl-white: 0 0% 98%;              /* #FAFAFA Elegant pearl white */
+    --steel-blue: 215 25% 35%;            /* #4A5568 Steel blue */
+    --midnight-blue: 220 35% 12%;         /* #1A202C Midnight blue */
     
     /* Primary System */
-    --aurora-primary: var(--classy-gold);
-    --aurora-secondary: var(--classy-cream);
-    --aurora-accent: var(--classy-pearl);
+    --aurora-primary: var(--elegant-blue);
+    --aurora-secondary: var(--ice-white);
+    --aurora-accent: var(--pearl-white);
     
     /* Elegant Foundation */
     --background: 220 25% 8%;              /* Deep midnight */
-    --surface: var(--classy-charcoal);
-    --surface-elevated: var(--classy-navy);
+    --surface: var(--midnight-blue);
+    --surface-elevated: var(--steel-blue);
     
     /* Refined Text Hierarchy */
     --text-high: 0 0% 98%;                /* Pure white for maximum contrast */
@@ -41,8 +41,8 @@
     --danger: 0 91% 58%;                  /* #EF4444 */
     
     /* Luxury Gradients */
-    --grad-primary: linear-gradient(135deg, hsl(var(--classy-gold)) 0%, hsl(var(--classy-cream)) 100%);
-    --grad-ember: linear-gradient(135deg, hsl(var(--classy-cream)) 0%, hsl(var(--classy-gold)) 100%);
+    --grad-primary: linear-gradient(135deg, hsl(var(--elegant-blue)) 0%, hsl(var(--royal-blue)) 100%);
+    --grad-ember: linear-gradient(135deg, hsl(var(--ice-white)) 0%, hsl(var(--elegant-blue)) 100%);
     --grad-surface: linear-gradient(135deg, hsl(var(--surface)) 0%, hsl(var(--surface-elevated)) 100%);
     
     /* Glass Effect */
@@ -53,7 +53,7 @@
     --shadow-sm: 0 2px 12px -2px hsla(220, 39%, 5%, 0.4);
     --shadow-md: 0 8px 32px -4px hsla(220, 39%, 5%, 0.5);
     --shadow-lg: 0 20px 48px -8px hsla(220, 39%, 5%, 0.6);
-    --shadow-glow: 0 0 40px hsl(var(--classy-gold) / 0.3);
+    --shadow-glow: 0 0 40px hsl(var(--elegant-blue) / 0.4);
     
     /* Layout */
     --radius: 1rem;
