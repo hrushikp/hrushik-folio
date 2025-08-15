@@ -7,6 +7,9 @@ import Index from "./pages/Index";
 import Experience from "./pages/Experience";
 import NotFound from "./pages/NotFound";
 
+import Header from "./components/layout/Header";
+import Footer from "./components/layout/Footer";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -15,12 +18,18 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/experience" element={<Experience />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <div className="min-h-screen bg-background">
+          <Header />
+          <main>
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/experience" element={<Experience />} />
+              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </main>
+          <Footer />
+        </div>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

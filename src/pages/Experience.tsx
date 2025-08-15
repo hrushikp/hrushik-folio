@@ -1,6 +1,4 @@
 import { motion } from "framer-motion";
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Calendar, MapPin, TrendingUp, Award, Download, ExternalLink } from "lucide-react";
 
@@ -85,12 +83,9 @@ const certifications = [
 
 export default function Experience() {
   return (
-    <div className="min-h-screen bg-background">
-      <Header />
-      
-      <main className="pt-20">
-        {/* Hero Section */}
-        <section className="py-20 relative overflow-hidden">
+    <div className="pt-20">
+      {/* Hero Section */}
+      <section className="py-20 relative overflow-hidden">
           <div className="container-custom mx-auto px-6">
             <motion.div
               className="text-center mb-16"
@@ -327,9 +322,6 @@ export default function Experience() {
             </motion.div>
           </div>
         </section>
-      </main>
-
-      <Footer />
     </div>
   );
 }
